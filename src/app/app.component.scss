@@ -1,0 +1,123 @@
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  color: yellow;
+}
+
+#content{
+  text-align: center;
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* Scroll Bar */
+#content::-webkit-scrollbar {
+  width: 10px;
+}
+ 
+#content::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 20px;
+}
+
+#content::-webkit-scrollbar-track {
+  background: #ddd;
+  border-radius: 20px;
+}
+
+a{
+  font-size: 3rem;
+  font-family: impact;
+  color: white;
+
+}
+
+/*Router Navigation Side Bar*/
+#routingLink{
+  text-align: center;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0; 
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 30px;
+}
+
+#routingPlacement {
+  position: relative;
+  display: inline;
+}
+
+/*Navigation and Effect*/
+#nav-toggle {
+  position: absolute;
+  cursor: pointer;
+  z-index: 3;
+  padding-top: 30px;
+  padding-left: 15px;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: white;
+  position: absolute;
+  display: block;
+  content: '';
+}
+
+#nav-toggle span:before {
+  top: -10px;
+}
+
+#nav-toggle span:after {
+  bottom: -10px;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  transition: all 500ms ease-in-out;
+}
+
+#nav-toggle.active span {
+  background-color: transparent;
+}
+
+#nav-toggle.active span:before,
+#nav-toggle.active span:after {
+  top: 0;
+}
+
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+//Footer 
+#social-icon{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: right;
+}
