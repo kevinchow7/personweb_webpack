@@ -1,25 +1,16 @@
-<div id="stars1"></div>
-<div id="stars2"></div>
-<div id="stars3"></div>
-
 <a id="nav-toggle"><span></span></a>
 
-<div class="container">
-  <div id="routingLink">
-    <div id="routingPlacement">
-      <a id="content-link" routerLink="">Home</a><br>
-      <a id="content-link" routerLink="about">About</a><br>
-      <a id="content-link" routerLink="experience">Experience</a><br>
-      <a id="content-link" routerLink="project">Project</a><br>
-    </div>
-  </div>
-
-  <div id="content">
-    <router-outlet></router-outlet>
+<div id="routingLink">
+  <div id="routingPlacement">
+    <a routerLink="">Home</a><br>
+    <a routerLink="about">About</a><br>
+    <a routerLink="experience">Experience</a><br>
+    <a routerLink="project">Project</a><br>
   </div>
 </div>
 
-<div id="social-icon">
-  <i class="fa fa-linkedin" aria-hidden="true"></i>
+<div id="content">
+  <router-outlet></router-outlet>
 </div>
+
 

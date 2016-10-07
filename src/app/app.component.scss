@@ -33,10 +33,9 @@ a:hover {
 }
 
 a{
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: impact;
   color: white;
-
 }
 
 /*Router Navigation Side Bar*/
@@ -54,18 +53,12 @@ a{
   padding-top: 30px;
 }
 
-#routingPlacement {
-  position: relative;
-  display: inline;
-}
-
 /*Navigation and Effect*/
 #nav-toggle {
   position: absolute;
   cursor: pointer;
   z-index: 3;
-  padding-top: 30px;
-  padding-left: 15px;
+  padding: 10px 35px 16px 0px;
 }
 
 #nav-toggle span,
@@ -110,14 +103,4 @@ a{
 
 #nav-toggle.active span:after {
   transform: rotate(-45deg);
-}
-
-//Footer 
-#social-icon{
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  text-align: right;
 }
