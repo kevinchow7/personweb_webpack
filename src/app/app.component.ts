@@ -2,14 +2,14 @@
 
 import { Component } from '@angular/core';
 import { ApiService } from './shared';
-import '../style/app.scss';
+//import '../style/app.scss';
 
 //declare var $:JQueryStatic;
 
 @Component({
   selector: 'my-app', // <my-app></my-app>
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
   ngAfterViewInit() {
@@ -21,15 +21,16 @@ export class AppComponent {
         jQuery("#nav-toggle").toggleClass("active");
         if(num%2==0){
           if(mq.matches){
-            jQuery("#routingLink").css("width", "100%");
+            jQuery("#routingLink").width("100%");
+            // jQuery("#routingLink").css("width", "100%");
             //jQuery("#content").css("marginLeft", "50%");
           } else {
-            jQuery("#routingLink").css("width", "50%");
+            jQuery("#routingLink").width("50%");
             jQuery("#content").css("marginLeft", "50%");
           }
         }
         else{
-          jQuery("#routingLink").css("width", "0%");
+          jQuery("#routingLink").width("0%");
           jQuery("#content").css("marginLeft", "0%");
 
         }
