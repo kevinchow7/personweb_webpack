@@ -1,3 +1,18 @@
+.modal{
+  text-align: center;
+  background-color:white;
+}
+
+#modal1{
+  width: 30%;
+
+}
+
+iframe{
+  margin-top: 3rem;
+  width: 500px !important;
+  border-width: 0px !important;
+}
 
 a:link {
   text-decoration: none;
@@ -8,7 +23,7 @@ a:visited {
 }
 
 a:hover {
-  color: yellow;
+  color: limegreen;
 }
 
 #content{
@@ -37,26 +52,46 @@ a{
   color: white;
 }
 
+#social{
+  font-size: 2rem;
+  font-family: impact;
+  color: white;
+  position: relative;
+  margin-top: 37rem;
+}
+
+#social-icons{
+  margin-top: 5%;
+}
+
 /*Router Navigation Side Bar*/
 #routingLink{
+  opacity: 0.8;
   text-align: center;
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   top: 0;
   left: 0; 
   background-color: #111;
   overflow-x: hidden;
+  overflow-y:hidden;
   transition: 0.5s;
   padding-top: 30px;
 }
 
+#routingPlacement{
+  margin-top: 7rem;
+}
+
 /*Navigation and Effect*/
 #nav-toggle {
+  margin-top: 35px;
+  margin-left: 35px;
   position: absolute;
   cursor: pointer;
-  z-index: 3;
+  z-index: 15;
   padding: 10px 35px 16px 0px;
 }
 
@@ -67,7 +102,7 @@ a{
   border-radius: 1px;
   height: 5px;
   width: 35px;
-  background: white;
+  background: limegreen;
   position: absolute;
   display: block;
   content: '';
