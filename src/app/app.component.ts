@@ -17,43 +17,30 @@ export class AppComponent {
     //handles modal popup 
     jQuery(".modal-trigger").leanModal();
 
-    //modification of iframe
-
-    // jQuery('iframe').load(function() {
-    //   jQuery('iframe').contents().find("head")
-    //   .append(jQuery("<style type='text/css'> .ss-form-container{box-shadow:none;}"));
-    // })
-
     //handles side nav
     var num = 1
     var mq = window.matchMedia("(max-width: 600px)")
     jQuery(document).ready(function(){
-      jQuery("#nav-toggle").click(function(){
-        num += 1 
-        jQuery("#nav-toggle").toggleClass("active");
-        if(num%2==0){
-          if(mq.matches){
+      if(mq.matches){
+        jQuery("#nav-toggle").click(function(){
+          num += 1 
+          jQuery("#nav-toggle").toggleClass("active");
+          if(num%2==0){
             jQuery("#routingLink").width("100%");
             jQuery("#social").show();
             jQuery("#routingPlacement").show()
-            // jQuery("#routingLink").css("width", "100%");
-            //jQuery("#content").css("marginLeft", "50%");
           } else {
-            jQuery("#routingLink").width("15%");
-            jQuery("#content").css("marginLeft", "15%");
-            jQuery("#social").show();
-            jQuery("#routingPlacement").show()
+            jQuery("#routingLink").width("0%");
+            jQuery("#content").css("marginLeft", "0%");
+            jQuery("#social").hide();
+            jQuery("#routingPlacement").hide();
           }
-        }
-        else{
-          jQuery("#routingLink").width("0%");
-          jQuery("#content").css("marginLeft", "0%");
-          jQuery("#social").hide();
-          jQuery("#routingPlacement").hide();
-
-        }
-      });
-
+        });
+      } else{
+        jQuery("#nav-toggle").hide();
+        jQuery("#content").css("margin-left", "20%");
+        jQuery("#routingLink").width("20%");
+      }
     });
 
     }
